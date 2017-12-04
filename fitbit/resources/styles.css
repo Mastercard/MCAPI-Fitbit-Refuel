@@ -1,0 +1,93 @@
+textarea {
+  font-size: 32;
+  font-family: System-Regular;
+  font-weight: regular;
+}
+
+text{
+  font-size: 32;
+  font-family: System-Regular;
+  font-weight: regular;
+  y: 12;
+  text-length: 32;
+}
+
+
+.screen { 
+  width: 100%; 
+  height: 100%; 
+}
+
+.button { 
+  width: 48%; 
+  height: 48%; 
+  x: 0%; 
+  y: 0%; 
+}
+
+.text{
+  x: 50%;
+  y: 100%-15;
+  font-family: "Colfax-Regular";
+  fill: "fb-white";
+  font-size: 19;
+}
+
+.inner { 
+  width: 100%; 
+  height: 100%; 
+  x: 0; 
+  y: 0; 
+}
+.message {
+  font-family: "Colfax-Regular";
+  text-anchor: middle;
+  display-align: center;
+  x: 5%;
+  y: 45%;
+  width: 90%;
+  height: 90%;
+  text-length:512;
+  font-size: 22;
+  fill: "fb-light-gray";
+  display: none;
+}
+
+#merchantScreen{
+  display:none;
+}
+
+#mapScreen{
+  display:none;
+}
+
+#homeScreen{
+  display:inline;  
+}
+
+#staticmessageicon{
+  display: none;
+}
+
+.top-head{
+  font-family: Colfax-Bold;
+}
+
+
+#merList{
+  display: inline;
+}
+
+
+.item{
+  display: inline;
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 90; 
+
+}
+
+.bottom-border{
+  fill: #5B5B5B; 
+}

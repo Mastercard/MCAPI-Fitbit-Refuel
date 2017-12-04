@@ -1,0 +1,19 @@
+{
+  "fitbit": {
+    "appUUID": "2f77816b-cfc3-4c1a-a1df-a4186bb7731b",
+    "appType": "app",
+    "appDisplayName": "Refuel",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#8bc34a",
+    "requestedPermissions": [
+      "access_internet",
+      "run_background",  
+      "access_location"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Refuel"
+      }
+    }
+  }
+}

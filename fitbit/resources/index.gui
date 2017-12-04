@@ -1,0 +1,136 @@
+<svg class="screen">
+  <!-- -- Message Screen -->
+   
+  <textarea id="message" class="message">
+      <svg>
+      
+      <g id="messageanimation" transform="translate(0,10%)" >
+        <animateTransform attributeType="translate" from="-110,10%" to="125%,10%" begin="load;activate" dur="2" repeatCount="indefinite" easing="ease-in" />
+        <image id="messageicon" class="icon" x="0" y="20" width="125" height="125" href="icon.png"/>
+      </g>
+      <image id="staticmessageicon" class="icon" x="20" y="20" width="125" height="125" href="icon-phonedis.png"/>
+    </svg>
+  </textarea>
+  <!-- -- Message End -->
+  
+  <!-- --- Home Screen Start --> 
+  <svg id="homeScreen">
+    <svg id="refresh" class="button" pointer-events="visible" >
+        <rect x="0" y="0" width="100%" height="100%" fill="fb-dark-gray" />
+        <rect x="1" y="1" width="99%" height="99%" fill="fb-black">
+          <animate attributeName="opacity" begin="click" from="1" to="0.5" dur=".3" final="restore" />        
+        </rect>
+        <g transform="translate(0,0)">
+          <text class="text" text-anchor="middle">Refreshments</text>  
+        </g>
+        <g transform="translate(-35,0)">
+          <image class="icon" x="50%" y="10" width="80" height="80" href="icon-refreshments.png" />  
+        </g>
+    </svg>
+
+     <svg id="food" class="button" x="51%" pointer-events="visible" >
+        <rect x="0" y="0" width="100%" height="100%" fill="fb-dark-gray" />
+        <rect x="1" y="1" width="99%" height="99%" fill="fb-black">
+           <animate attributeName="opacity" begin="click" from="1" to="0.5" dur=".3" final="restore" />           
+        </rect>
+        <g transform="translate(5,0)">
+          <text class="text" text-anchor="middle">Food</text>  
+        </g>
+        <g transform="translate(-35,0)">
+          <image class="icon" x="50%" y="10" width="80" height="80" href="icon-food.png" />  
+        </g>
+    </svg>
+
+    <svg id="pharmacies" class="button" y="51%" pointer-events="visible" >
+        <rect x="0" y="0" width="100%" height="100%" fill="fb-dark-gray" />
+        <rect x="1" y="1" width="99%" height="99%" fill="fb-black">
+          <animate attributeName="opacity" begin="click" from="1" to="0.5" dur=".3" final="restore" />       
+        </rect>
+        <g transform="translate(0,0)">
+          <text class="text" text-anchor="middle">Pharmacies</text>  
+        </g>
+        <g transform="translate(-35,0)">
+          <image class="icon" x="50%" y="10" width="80" height="80" href="icon-pharmacies.png" />  
+        </g>
+    </svg>
+
+    <svg id="sportingGoods" class="button" y="51%" x="51%" pointer-events="visible" >
+        <rect x="0" y="0" width="100%" height="100%" fill="fb-dark-gray" />
+        <rect x="1" y="1" width="99%" height="99%" fill="fb-black">
+           <animate attributeName="opacity" begin="click" from="1" to="0.5" dur=".3" final="restore" />       
+        </rect>
+        <g transform="translate(0,0)">
+          <text class="text" text-anchor="middle">Sporting Goods</text>  
+        </g>
+        <g transform="translate(-35,0)">
+          <image class="icon" x="50%" y="10" width="80" height="80" href="icon-sportinggoods.png" />  
+        </g>
+    </svg>
+
+  </svg>
+
+  <!-- --- Home Screen End --> 
+  
+  <!-- --- Merchant Screen -->
+  
+  <svg id="merchantScreen">
+    
+    <symbol id="tile-mer" focusable="true" pointer-events="visible" system-events="all">
+      <text id="mname"font-size="28" x="10" y="36" fill="white" font-weight="bold" width="75%" text-overflow="ellipsis">Merchant 1</text>
+      <text id="mloc" font-size="20" x="10" y="62" fill="#E2E2E2" width="90%" text-overflow="ellipsis">4057 N. Waterman St.</text>
+      <text id="mdis" font-size="28" x="75%" y="36" fill="white" font-weight="bold">50m</text>
+      <rect id="merclick" pointer-events="visible" fill="white" opacity="0" y="0" width="100%" height="100%" />
+      <rect class="bottom-border" y="84" width="100%" height="1" />
+
+    </symbol>
+  
+    <symbol id="view-header" href="#scrollview-header">
+      <rect fill='inherit' x='0' y='0' width='100%' height='100%'/>
+      <text class="top-head" id="headText" x="10" y="50%+10" fill="black" font-size="24" />
+    </symbol>
+  
+    <use href="#scrollview">
+
+      <use href="#view-header" height='40' fill='#ffa200'>
+        <set href="#headText" attributeName="text-buffer" to="Refreshments" />
+      </use>
+    
+      <use href="#scrollview-item">
+
+        <use id="merList"  href="#tile-list" height="100%" width="100%">
+          <var id="reorder-enabled" value="0"/>
+
+          <use id="tile-0" href="#tile-list-item" class="item">
+            <use href="#tile-mer" />
+          </use>
+
+          <use id="tile-1" href="#tile-list-item" class="item">
+            <use href="#tile-mer" />
+          </use>
+
+          <use id="tile-2" href="#tile-list-item" class="item">
+            <use href="#tile-mer" />
+          </use>
+
+          <use id="tile-3" href="#tile-list-item" class="item">
+            <use href="#tile-mer" />
+          </use>
+
+          <use id="tile-4" href="#tile-list-item" class="item">
+            <use href="#tile-mer" />
+          </use>
+        </use>
+      </use>
+    </use>
+  </svg>
+  <!-- --- Merchant Screen Over -->
+ 
+  
+  <!-- --- Map Screen start -->
+  <svg id="mapScreen">
+    <image id="mapimg" class="map" x="0" y="0" width="100%"  height="100%" href="sample_map.jpg" />  
+    <text class="top-head" id="mapMerchant" x="10" width="75%" text-overflow="ellipsis" y="30" fill="white" font-size="24" >Merchant name very long here</text>
+    <text class="top-head" id="mapDistance" x="80%" y="30" fill="white" font-size="16" >500m</text>
+  </svg>
+  <!-- --- Map Screen Over -->
+</svg>
