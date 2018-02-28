@@ -1,6 +1,6 @@
-# Fitbit Refuel
+# Mastercard Recharge On-the-Go
 A backend server implementation to demonstrate the capabilities of the MasterCard Location Services APIs.
-This project is a companion to the [Fitbit Refuel Solution](https://developer.mastercard.com/solution/fitbit-refuel) that demonstrates how [Fitbit Ionic](https://www.fitbit.com/ionic) users can find local businesses who accept contactless payment.
+This project is a companion to the [Recharge On-the-Go](https://developer.mastercard.com/solution/recharge-on-the-go) that demonstrates how [Fitbit Ionic](https://www.fitbit.com/ionic) users can find local businesses who accept contactless payment.
 
 This project leverages the [Spring Boot Framework](https://spring.io/). See below for installation and usage details.
 
