@@ -1,7 +1,7 @@
 //back end server
 export function Backend(){
-  this.AccessKey = '***REMOVED***';
-  this.BaseUrl = '***REMOVED***';
+  this.AccessKey = '';
+  this.BaseUrl = '';
 }
 
 Backend.prototype.getNearbyMerchants = function(ind,lat, lon) {
